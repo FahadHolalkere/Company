@@ -1,0 +1,16 @@
+1) Tech Stack:
+    ->Backend: Node.js with Express framework for building RESTful APIs.
+    ->Database: MongoDB for storing event data.
+    ->Dependencies: Mongoose for MongoDB object modeling, csvtojson for parsing CSV data, axios for making HTTP requests.
+
+2) Design Decisions:
+    ->Chose Express for its simplicity and robustness in building web applications and APIs.
+    ->Used MongoDB due to its flexibility, scalability, and compatibility with Node.js.
+    ->Implemented pagination logic to efficiently handle large datasets and improve performance.
+    ->Used async/await for asynchronous operations to write cleaner and more readable code.
+
+3) Challenges Addressed:
+    ->Parsing and inserting CSV data into MongoDB.
+    ->Integrating with external APIs to fetch weather data and calculate distances.
+    ->Implementing pagination and organizing event data into pages.
+    ->Handling errors gracefully and providing informative error messages.

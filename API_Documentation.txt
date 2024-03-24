@@ -1,0 +1,22 @@
+1) Endpoint: /events/add
+    => Method: POST
+    => Request Format:
+    => Body: Form data containing the input file (CSV format) with key inputfile
+    => Response Format:
+    => Success: HTTP 200 OK with message "Data Inserted Successfully"
+    => Failure: HTTP 500 Internal Server Error with message "Error Occurred in Insertion"
+
+2) Endpoint: /events/find
+    => Method: GET
+    => Query Parameters:
+    => latitude: Latitude of the location (required)
+    => longitude: Longitude of the location (required)
+    => startdate: Start date in the format "YYYY-MM-DD" (required)
+    => Response Format:
+    => Success: HTTP 200 OK with JSON object containing event details and pagination info
+    => events: Array of events with details
+    => page: Current page number
+    => pageSize: Number of events in the current page
+    => totalEvents: Total number of events
+    => totalPages: Total number of pages
+    => Failure: HTTP 500 Internal Server Error with message "Internal server error"
